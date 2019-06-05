@@ -1,1 +1,2 @@
-# prob_sym_nn
+# Probabilistic Analysis for Neural Networks Using Symbolic Execution
+We're doing bias and fairness computation/estimation for neural nets. It's better than random, at any rate. First issue: get informed sampling working on neural nets. Second: improve on that.
