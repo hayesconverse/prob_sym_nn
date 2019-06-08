@@ -37,6 +37,7 @@ public class AdultIncomeDataGenerator {
 	}
 	
 	//This is based on the FairSquare example at https://github.com/sedrews/fairsquare/blob/master/oopsla/noqual/M_BNc_F_NN_V2_H1.fr
+	//Returns data in the form [sex, capital_gain, age, education_num]
 	public static double[] popModel() {
 		double[] retvals = new double[4];
 		Random r = new Random();

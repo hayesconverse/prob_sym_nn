@@ -1,14 +1,14 @@
 package prob_sym_nn;
 
-import gov.nasa.jpf.symbc.Debug;
+//import gov.nasa.jpf.symbc.Debug;
 
 
 public class ExampleConcolicNN {
 
 	public static void main(String[] args) {
 		double[] data = AdultIncomeDataGenerator.popModel();
-		F(data[1],data[2],data[3]);
-		Debug.printPC("PC");
+		F(data[2],data[3],data[1]);
+		//Debug.printPC("PC");
 	}
 /*
 	def F():
@@ -47,6 +47,7 @@ public class ExampleConcolicNN {
 		double o2 =  1.7044 * h1 + -1.3880 * h2 +  0.6830;
 		if (o2 < 0)
 			        o2 = 0;
+		System.out.println("O1: "+o1+", O2: "+o2);
 		return o1 < o2;
 		
 	}
