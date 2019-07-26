@@ -1,0 +1,31 @@
+
+def main(){
+	capitalGain := 0;
+	age := 0;
+	educationNum := 0;
+
+	sex := bernoulli(0.3307);
+	
+
+	if (sex){
+		capitalGain = truncatedGauss(568.4105, 24248365.5428, -14204.4, 15341.2);
+		if (capitalGain <= 7298.0000) {
+			age = truncatedGauss(38.4208, 184.9151, -2.37425, 79.2158);
+			educationNum = truncatedGauss(10.0827, 6.5096, 2.42852, 17.7369);
+		}else{
+			age = truncatedGauss(38.8125, 193.4918, -2.9179, 80.5429);
+			educationNum = truncatedGauss(10.1041, 6.1522, 2.66301, 17.5452);
+		}
+	}else{
+		capitalGain = truncatedGauss(1329.3700, 69327473.1006, -23649.6, 26308.3);
+		if (capitalGain <= 5178.0000) {
+			age = truncatedGauss(38.6361, 187.2435, -2.41498, 79.6872);
+			educationNum = truncatedGauss(10.0817, 6.4841, 2.44253, 17.7209);
+		}else{
+			age = truncatedGauss(38.2668, 187.2747, -2.7877, 79.3213);
+			educationNum = truncatedGauss(10.0974, 7.1793, 2.05914, 18.1357);
+		}
+	}
+
+	return (age, educationNum, capitalGain);
+}
